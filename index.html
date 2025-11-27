@@ -1,146 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>In Loving Memory</title>
-  <style>
-    body {
-      font-family: "Georgia", serif;
-      background: linear-gradient(to bottom, #2c3e50, #34495e);
-      color: #f9f9f9;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      margin-top: 20px;
-      font-size: 2em;
-    }
-    h2 {
-      margin: 5px 0 20px;
-      font-weight: normal;
-      font-size: 1.2em;
-      color: #ddd;
-    }
-    .slideshow-container {
-      position: relative;
-      max-width: 95%;
-      margin: auto;
-    }
-    .slide {
-      display: none;
-      animation: fade 2s;
-    }
-    .slide img {
-      width: 100%;
-      height: auto; /* keep original dimensions */
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    }
-    .caption {
-      margin-top: 10px;
-      font-size: 1.1em;
-      color: #eee;
-    }
-    /* Buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      padding: 14px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      transition: 0.3s;
-      border-radius: 50%;
-      user-select: none;
-      background: rgba(0,0,0,0.4);
-    }
-    .next { right: 0; }
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.7);
-    }
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
-    footer {
-      margin: 30px 0;
-      font-size: 1em;
-      color: #ccc;
-    }
-    /* Mobile adjustments */
-    @media (max-width: 600px) {
-      h1 { font-size: 1.5em; }
-      h2 { font-size: 1em; }
-      .caption { font-size: 0.9em; }
-      .prev, .next { font-size: 16px; padding: 10px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In Loving Memory</title>
+<style>
+body {
+font-family: "Georgia", serif;
+background: linear-gradient(to bottom, #2c3e50, #34495e);
+color: #f9f9f9;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+h1 {
+margin-top: 20px;
+font-size: 2em;
+}
+h2 {
+margin: 5px 0 20px;
+font-weight: normal;
+font-size: 1.2em;
+color: #ddd;
+}
+.slideshow-container {
+position: relative;
+max-width: 95%;
+margin: auto;
+}
+.slide {
+display: none;
+animation: fade 2s;
+}
+.slide img {
+width: 100%;
+height: auto;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.caption {
+margin-top: 10px;
+font-size: 1.1em;
+color: #eee;
+}
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+padding: 14px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+transition: 0.3s;
+border-radius: 50%;
+user-select: none;
+background: rgba(0,0,0,0.4);
+}
+.next { right: 0; }
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.7);
+}
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+footer {
+margin: 30px 0;
+font-size: 1em;
+color: #ccc;
+}
+@media (max-width: 600px) {
+h1 { font-size: 1.5em; }
+h2 { font-size: 1em; }
+.caption { font-size: 0.9em; }
+.prev, .next { font-size: 16px; padding: 10px; }
+}
+</style>
 </head>
 <body>
 
-  <h1>In Loving Memory of Akpan Johnny Umoh</h1>
-  <h2>1939 – 2025</h2>
 
-  <div class="slideshow-container">
-    <div class="slide">
-      <img src="1.jpeg" alt="Picture 1">
-      <div class="caption">A life well Lived</div>
-    </div>
-    <div class="slide">
-      <img src="2.jpeg" alt="Picture 2">
-      <div class="caption">Cherished moments</div>
-    </div>
-    <div class="slide">
-      <img src="3.jpeg" alt="Picture 3">
-      <div class="caption">A family man</div>
-    </div>
-    <div class="slide">
-      <img src="4.jpeg" alt="Picture 4">
-      <div class="caption">A guiding light</div>
-    </div>
-    <div class="slide">
-      <img src="5.jpeg" alt="Picture 5">
-      <div class="caption">Forever in our hearts</div>
-    </div>
+<h1>In Loving Memory of Akpan Johnny Umoh</h1>
+<h2>1939 – 2025</h2>
 
-    <!-- Buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
 
-  <footer>
-    Created by <b>IWEGBUE CHUKWUELOKE</b>, Grandson
-  </footer>
-  
-  <script>
-    let slideIndex = 0;
-    const slides = document.getElementsByClassName("slide");
+<div class="slideshow-container">
 
-    // Show the first slide immediately
-    slides[0].style.display = "block";
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+<div class="slide">
+<img src="55-691.jpeg" alt="Picture 1">
+<div class="caption">55-69</div>
+</div>
 
-    function showSlides(n) {
-      if (n >= slides.length) slideIndex = 0;
-      if (n < 0) slideIndex = slides.length - 1;
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex].style.display = "block";
-    }
 
-    // Auto-play every 6 seconds
-    setInterval(() => {
-      plusSlides(1);
-    }, 6000);
-  </script>
+<!-- Slide 2 -->
+<div class="slide">
+<img src="55-692.jpeg" alt="Picture 2">
+<div class="caption">55-69</div>
+</div>
+
+
+<!-- Slide 3 -->
+<div class="slide">
+<img src="55-693.jpeg" alt="Picture 3">
+<div class="caption">55-69</div>
+</div>
+
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="55-694.jpeg" alt="Picture 4">
+<div class="caption">55-69</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="55-695.jpeg" alt="Picture 5">
+<div class="caption">55-69</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="55-696.jpeg" alt="Picture 6">
+<div class="caption">55-69</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="55-697.jpeg" alt="Picture 7">
+<div class="caption">55-69</div>
+</div>
+
+
+<!-- Slide 8 -->
+<div class="slide">
+<img src="55-698.jpeg" alt="Picture 8">
+<div class="caption">55-69</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="55-699.jpeg" alt="Picture 9">
+<div class="caption">55-69</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="55-699.jpeg" alt="Picture 10">
+<div class="caption">55-69</div>
+</div>
+
+
+<div class="slide">
+<img src="70-801.jpeg" alt="Picture 1">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 2 -->
+<div class="slide">
+<img src="70-802.jpeg" alt="Picture 2">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 3 -->
+<div class="slide">
+<img src="70-803.jpeg" alt="Picture 3">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="70-804.jpeg" alt="Picture 4">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="70-805.jpeg" alt="Picture 5">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="70-806.jpeg" alt="Picture 6">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="70-807.jpeg" alt="Picture 7">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 8 -->
+<div class="slide">
+<img src="70-808.jpeg" alt="Picture 8">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="70-809.jpeg" alt="Picture 9">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="70-8010.jpeg" alt="Picture 10">
+<div class="caption">70-79</div>
+</div>
+
+<div class="slide">
+<img src="70-8011.jpeg" alt="Picture 1">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- Slide 2 -->
+<div class="slide">
+<img src="70-8012.jpeg" alt="Picture 2">
+<div class="caption">70-79</div>
+</div>
+
+
+<!-- 70-79 -->
+<div class="slide">
+<img src="70-8013.jpeg" alt="Picture 3">
+<div class="caption">70-79</div>
+</div>
+
+
+<!--80-89-->
+<div class="slide">
+<img src="81-901.jpeg" alt="Picture 4">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="81-902.jpeg" alt="Picture 5">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="81-903.jpeg" alt="Picture 6">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="81-904.jpeg" alt="Picture 7">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slide 8 -->
+<div class="slide">
+<img src="81-905.jpeg" alt="Picture 8">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="81-906.jpeg" alt="Picture 9">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="81-907.jpeg" alt="Picture 10">
+<div class="caption">80-89</div>
+</div>
+
+<div class="slide">
+<img src="81-908.jpeg" alt="Picture 1">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slide 2 -->
+<div class="slide">
+<img src="81-909.jpeg" alt="Picture 2">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slide 3 -->
+<div class="slide">
+<img src="81-9010.jpeg" alt="Picture 3">
+<div class="caption">80-89</div>
+</div>
+
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="91-001.jpeg" alt="Picture 4">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="91-002.jpeg" alt="Picture 5">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="91-002.jpeg" alt="Picture 6">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="91-003.jpeg" alt="Picture 7">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slide 8 -->
+<div class="slide">
+<img src="91-003.jpeg" alt="Picture 8">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="91-004.jpeg" alt="Picture 9">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="91-005.jpeg" alt="Picture 10">
+<div class="caption">90-00</div>
+</div>
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="91-006.jpeg" alt="Picture 4">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="91-007.jpeg" alt="Picture 5">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="91-008.jpeg" alt="Picture 6">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="91-009.jpeg" alt="Picture 7">
+<div class="caption">90-00</div>
+</div>
+
+
+<!-- 01-11 -->
+<div class="slide">
+<img src="01-101.jpeg" alt="Picture 8">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="01-102.jpeg" alt="Picture 9">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="01-103.jpeg" alt="Picture 10">
+<div class="caption">00-10</div>
+</div>
+
+
+<!--80-89-->
+<div class="slide">
+<img src="01-104.jpeg" alt="Picture 4">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="01-105.jpeg" alt="Picture 5">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="01-106.jpeg" alt="Picture 6">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="01-107.jpeg" alt="Picture 7">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 8 -->
+<div class="slide">
+<img src="01-108.jpeg" alt="Picture 8">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="01-109.jpeg" alt="Picture 9">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="01-1010.jpeg" alt="Picture 10">
+<div class="caption">00-10</div>
+</div>
+
+<div class="slide">
+<img src="01-1011.jpeg" alt="Picture 1">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 2 -->
+<div class="slide">
+<img src="01-1012.jpeg" alt="Picture 2">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 3 -->
+<div class="slide">
+<img src="01-1013.jpeg" alt="Picture 3">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="01-1014.jpeg" alt="Picture 4">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="01-1015.jpeg" alt="Picture 5">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="01-1016.jpeg" alt="Picture 6">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="01-1017.jpeg" alt="Picture 7">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 8 -->
+<div class="slide">
+<img src="01-1018.jpeg" alt="Picture 8">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="01-1019.jpeg" alt="Picture 9">
+<div class="caption">00-10</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="01-1020.jpeg" alt="Picture 10">
+<div class="caption">00-10</div>
+</div>
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="11-201.jpeg" alt="Picture 4">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="11-202.jpeg" alt="Picture 5">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="11-203.jpeg" alt="Picture 6">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="11-204.jpeg" alt="Picture 7">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- 01-11 -->
+<div class="slide">
+<img src="11-205.jpeg" alt="Picture 8">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="11-206.jpeg" alt="Picture 9">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="11-207.jpeg" alt="Picture 10">
+<div class="caption">11-20</div>
+</div>
+
+
+<div class="slide">
+<img src="11-208.jpeg" alt="Picture 1">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 2 -->
+<div class="slide">
+<img src="11-209.jpeg" alt="Picture 2">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 3 -->
+<div class="slide">
+<img src="11-2010.jpeg" alt="Picture 3">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="11-2011.jpeg" alt="Picture 4">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="11-2012.jpeg" alt="Picture 5">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="11-2013.jpeg" alt="Picture 6">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="11-2014.jpeg" alt="Picture 7">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 8 -->
+<div class="slide">
+<img src="11-2015.jpeg" alt="Picture 8">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="11-2016.jpeg" alt="Picture 9">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="11-2017.jpeg" alt="Picture 10">
+<div class="caption">11-20</div>
+</div>
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="11-2018.jpeg" alt="Picture 4">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="11-2019.jpeg" alt="Picture 5">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="11-2020.jpeg" alt="Picture 6">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="11-2021.jpeg" alt="Picture 7">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- 01-11 -->
+<div class="slide">
+<img src="11-2022.jpeg" alt="Picture 8">
+<div class="caption">11-20</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="21-251.jpeg" alt="Picture 9">
+<div class="caption">21-25</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="21-252.jpeg" alt="Picture 10">
+<div class="caption">21-25</div>
+</div>
+
+
+<div class="slide">
+<img src="21-253.jpeg" alt="Picture 1">
+<div class="caption">21-25</div>
+</div>
+
+
+<!-- Slide 2 -->
+<div class="slide">
+<img src="21-254.jpeg" alt="Picture 2">
+<div class="caption">21-25</div>
+</div>
+
+
+<!-- Slide 3 -->
+<div class="slide">
+<img src="21-255.jpeg" alt="Picture 3">
+<div class="caption">21-25</div>
+</div>
+
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="21-256.jpeg" alt="Picture 4">
+<div class="caption">21-25</div>
+</div>
+
+
+<!-- Slide 5 -->
+<div class="slide">
+<img src="bd1.jpeg" alt="Picture 5">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<!-- Slides 6–100 Generated -->
+<!-- Slide 6 -->
+<div class="slide">
+<img src="bd2.jpeg" alt="Picture 6">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<!-- Slide 7 -->
+<div class="slide">
+<img src="bd3.jpeg" alt="Picture 7">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<!-- Slide 8 -->
+<div class="slide">
+<img src="bd4.jpeg" alt="Picture 8">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<!-- Slide 9 -->
+<div class="slide">
+<img src="bd5.jpeg" alt="Picture 9">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<!-- Slide 10 -->
+<div class="slide">
+<img src="bd6.jpeg" alt="Picture 10">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<div class="slide">
+<img src="bd7.jpeg" alt="Picture 1">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<!-- Slide 2 -->
+<div class="slide">
+<img src="bd8.jpeg" alt="Picture 2">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<!-- Slide 3 -->
+<div class="slide">
+<img src="bd9.jpeg" alt="Picture 3">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<!-- Slide 4 -->
+<div class="slide">
+<img src="bd10.jpeg" alt="Picture 4">
+<div class="caption">85th Birthday</div>
+</div>
+
+
+<footer>
+Created by <b>IWEGBUE CHUKWUELOKE</b>, Grandson
+</footer>
+<script>
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+
+
+slides[0].style.display = "block";
+
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+
+function showSlides(n) {
+if (n >= slides.length) slideIndex = 0;
+if (n < 0) slideIndex = slides.length - 1;
+for (let i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slides[slideIndex].style.display = "block";
+}
+
+
+setInterval(() => {
+plusSlides(1);
+}, 6000);
+</script>
+
 
 </body>
 </html>
